@@ -1,5 +1,7 @@
 @import 'mixings';
-
+main{
+    overflow: hidden;
+}
 .sol{
     height: 750px;
 
@@ -51,7 +53,6 @@
 
 .transformamos{
     overflow: hidden;
-    //background-color: red;
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -80,17 +81,83 @@
 
     &__img--left{
         width: 600px;
-        transform: translateX(-550px);
+        transform: translateX(-130px);
     }
     &__img--rigth{
         width: 600px;
-        transform: translateX(550px);
+        transform: translateX(130px);
     }
 
     &__h2{
         color: white;
     }
+
+    &__img--center{
+        height: 500px;
+        width: 900px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-style: double;  
+        border-color: rgb(0, 0, 0); 
+        border-width: 20px;
+        border-radius: 20px;
+    }
+
+    .tablet{
+        
+
+        &__cabecera{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 100px;
+            gap: 15px;
+        }
+
+        &__titulo{
+            font-family: 'arial';
+        }
+
+        &__logo{
+            height: 50px;
+            width: 50px;
+        }
+
+        &__parafo{
+            font-family: 'arial';
+            text-align: center;
+        }
+
+        &__img{
+            width: 600px;
+        }
+
+        &__link{
+            font-family: 'arial';
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-decoration: none;
+            color: rgb(0, 55, 255);
+        }
+    }
 }
+
+.creacionImpacto{
+    height: 750px;
+
+    &__titulo{
+        color: rgb(255, 94, 0);
+        font-family: 'arial';
+        font-size: 3rem;
+        transform: translate(100px,100px);
+    }
+}
+
+
 
 .mainEcreeadores{
         background-color: #FF2A2A;
@@ -114,5 +181,19 @@
         text-decoration: solid;
         color: white;
         font-size: 4rem;
+    }
+}
+
+.nuestraEsencia{
+    height: 750px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'arial';
+
+    &__h2--animacion{
+        font-size: 9rem;
     }
 }

@@ -3,11 +3,14 @@
 
 
 .nav{
+    position:fixed;
+    z-index: 100;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
     gap: 270px;
-    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.425);
     
     &__logo{
         justify-self: start;

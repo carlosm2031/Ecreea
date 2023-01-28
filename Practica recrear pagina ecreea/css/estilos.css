@@ -1,3 +1,6 @@
+main {
+  overflow: hidden; }
+
 .sol {
   height: 750px;
   background-image: url("https://www.ecreea.com/pages/home/fondo-planeta.webp");
@@ -61,12 +64,55 @@
     background-color: black; }
   .transformamos__img--left {
     width: 600px;
-    transform: translateX(-550px); }
+    transform: translateX(-130px); }
   .transformamos__img--rigth {
     width: 600px;
-    transform: translateX(550px); }
+    transform: translateX(130px); }
   .transformamos__h2 {
     color: white; }
+  .transformamos__img--center {
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    border-color: black;
+    border-width: 20px;
+    border-radius: 20px; }
+  .transformamos .tablet__cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    gap: 15px; }
+  .transformamos .tablet__titulo {
+    font-family: 'arial'; }
+  .transformamos .tablet__logo {
+    height: 50px;
+    width: 50px; }
+  .transformamos .tablet__parafo {
+    font-family: 'arial';
+    text-align: center; }
+  .transformamos .tablet__img {
+    width: 600px; }
+  .transformamos .tablet__link {
+    font-family: 'arial';
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0037ff; }
+
+.creacionImpacto {
+  height: 750px; }
+  .creacionImpacto__titulo {
+    color: #ff5e00;
+    font-family: 'arial';
+    font-size: 3rem;
+    transform: translate(100px, 100px); }
 
 .mainEcreeadores {
   background-color: #FF2A2A;
@@ -87,12 +133,26 @@
     color: white;
     font-size: 4rem; }
 
+.nuestraEsencia {
+  height: 750px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'arial'; }
+  .nuestraEsencia__h2--animacion {
+    font-size: 9rem; }
+
 .nav {
+  position: fixed;
+  z-index: 100;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 270px;
-  background-color: rgba(0, 0, 0, 0.583); }
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.425); }
   .nav__logo {
     justify-self: start;
     margin-left: 80px; }
